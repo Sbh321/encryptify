@@ -1,3 +1,5 @@
+import CryptoJS from "crypto-js";
+
 export async function generateKeyPair() {
   const keyPair = await window.crypto.subtle.generateKey(
     {
@@ -84,4 +86,33 @@ function base64ToArrayBuffer(base64) {
     bytes[i] = binaryString.charCodeAt(i);
   }
   return bytes.buffer;
+}
+
+// AES Encryption
+export function encryptMessageAes(key, message) {
+  if (!message || !key) {
+    throw new Error("Please provide both message and key.");
+  }
+
+  const encrypted = CryptoJS.AES.encrypt(message, key).toString();
+  return encrypted;
+}
+
+// AES Decryption
+export function decryptMessageAes(key, encryptedMessage) {
+  if (!encryptedMessage || !key) {
+    throw new Error("Please provide both encrypted message and key.");
+  }
+
+  try {
+    const decrypted = CryptoJS.AES.decrypt(encryptedMessage, key).toString(
+      CryptoJS.enc.Utf8
+    );
+    if (!decrypted) {
+      throw new Error("Decryption failed. Please check the key and try again.");
+    }
+    return decrypted;
+  } catch (e) {
+    throw new Error("Decryption failed. Please check the key and try again.");
+  }
 }
