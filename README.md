@@ -1,5 +1,66 @@
-# Vue 3 + Vite
+# Encryptify
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Encryptify is a static website dedicated to cryptography, encryption, and decryption, built with Vue.js. This platform provides informative content and tools to help users understand and utilize encryption techniques effectively.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Installation
+
+To get started with Encryptify, follow these steps:
+
+1.  **Clone the repository:**
+
+    ```
+    git clone https://github.com/your-username/encryptify.git
+    ```
+
+2.  **Navigate to the project directory:**
+
+    ```
+    cd encryptify
+    ```
+
+3.  **Install the dependencies:**
+    ```
+    npm install
+    ```
+4.  **Run the development server:**
+
+    ```
+    npm run serve
+    ```
+
+    The website will be available at http://localhost:8080.
+
+## Contribution
+
+We welcome contributions to Encryptify! To contribute, please follow these steps:
+
+1. **Fork the repository and clone your fork:**
+
+   ```
+   git clone https://github.com/your-username/encryptify.git
+   ```
+
+2. **Create a new branch for your feature or fix:**
+
+   ```
+   git checkout -b feature/your-feature-name
+   ```
+
+3. **Make your changes and commit them:**
+
+   ```
+   git add .
+   git commit -m "Add a brief description of your changes"
+   ```
+
+4. **Push your changes to your fork:**
+
+   ```
+   git push origin feature/your-feature-name
+   ```
+
+5. **Create a pull request on GitHub to merge your changes into the main repository.**
+
+For any issues or questions, please open an issue on GitHub or contact the maintainers.
+
+Happy coding!
