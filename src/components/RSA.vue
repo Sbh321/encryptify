@@ -8,6 +8,7 @@ import {
 import { copyToClipboard } from "../utils/copyUtils.js";
 import { ref } from "vue";
 import { toast } from "vue3-toastify";
+import messages from "../utils/data.js";
 
 const messageToEncrypt = ref("");
 const messageToDecrypt = ref("");
@@ -66,15 +67,12 @@ const handleKeysGenerated = ({ publicKey, privateKey }) => {
 };
 
 const handleGenerateMessage = () => {
-  let result = "";
-  const randomTimes = Math.floor(Math.random() * 10) + 1; // Generate a random number between 1 and 10
+  const randomIndex = Math.floor(Math.random() * messages.length); // Generate a random index
+  const randomMessage = messages[randomIndex]; // Get the message at the random index
 
-  for (let i = 0; i < randomTimes; i++) {
-    const randomString = Math.random().toString(36).substring(7);
-    result += randomString + (i < randomTimes - 1 ? " " : ""); // Add space between strings, but not after the last one
+  if (messageToEncrypt) {
+    messageToEncrypt.value = randomMessage; // Assign the random message to messageToEncrypt
   }
-
-  messageToEncrypt.value = result;
 };
 </script>
 

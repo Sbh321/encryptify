@@ -1,6 +1,6 @@
 # Encryptify
 
-Encryptify is a static website dedicated to cryptography, encryption, and decryption, built with Vue.js. This platform provides informative content and tools to help users understand and utilize encryption techniques effectively.
+Encryptify is a static website dedicated to cryptography, encryption, and decryption, built with Vue.js. This website provides informative content to help users understand and visualize encryption/decryption process effectively.
 
 ## Installation
 
@@ -9,7 +9,7 @@ To get started with Encryptify, follow these steps:
 1.  **Clone the repository:**
 
     ```
-    git clone https://github.com/your-username/encryptify.git
+    git clone https://github.com/Sbh321/encryptify.git
     ```
 
 2.  **Navigate to the project directory:**
@@ -25,10 +25,10 @@ To get started with Encryptify, follow these steps:
 4.  **Run the development server:**
 
     ```
-    npm run serve
+    npm run dev
     ```
 
-    The website will be available at http://localhost:8080.
+    The website will be available at http://localhost:3000.
 
 ## Contribution
 
@@ -37,7 +37,7 @@ We welcome contributions to Encryptify! To contribute, please follow these steps
 1. **Fork the repository and clone your fork:**
 
    ```
-   git clone https://github.com/your-username/encryptify.git
+   git clone https://github.com/Sbh321/encryptify.git
    ```
 
 2. **Create a new branch for your feature or fix:**
@@ -61,6 +61,6 @@ We welcome contributions to Encryptify! To contribute, please follow these steps
 
 5. **Create a pull request on GitHub to merge your changes into the main repository.**
 
-For any issues or questions, please open an issue on GitHub or contact the maintainers.
+For any issues or questions, please contact the owner.
 
 Happy coding!
